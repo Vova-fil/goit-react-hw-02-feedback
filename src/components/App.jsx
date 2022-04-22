@@ -28,8 +28,8 @@ export class App extends React.Component {
 
   render() {
     const { good, neutral, bad } = this.state;
-    const total = this.countTotalFeedback;
-    const positivePercentage = this.countPositiveFeedbackPercentage;
+    const total = this.countTotalFeedback(this.state);
+    const positivePercentage = this.countPositiveFeedbackPercentage(this.state);
 
     return (
       <>
